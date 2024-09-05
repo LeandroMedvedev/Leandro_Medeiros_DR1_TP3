@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.cabecalho,
+.rodape {
+  height: 15vh;
+  display: flex;
+}
+
+.cabecalho {
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    font-size: 4rem;
+    color: #03031b;
+  }
+
+  .hamburguer {
+    width: 70px;
+  }
+}
