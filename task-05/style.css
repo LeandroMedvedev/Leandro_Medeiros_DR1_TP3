@@ -1,0 +1,13 @@
+@media (orientation: portrait) {
+  .imagem {
+    width: 100%;
+  }
+}
+
+@media (orientation: landscape) {
+  .imagem {
+    height: 80vh;
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,38 @@
+.imagem {
+  width: 300px;
+  display: block;
+  margin: 25px auto;
+}
+
+.titulo,
+.texto {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  margin: 15px;
+  font-size: 1.5rem;
+}
+
+.texto {
+  padding: 10px;
+  font-size: 1em;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.texto::first-letter {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .imagem {
+    width: 40%;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+}

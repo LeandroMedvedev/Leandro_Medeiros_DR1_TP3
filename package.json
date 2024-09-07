@@ -1,8 +1,9 @@
 {
-  "name": "html-css",
-  "version": "1.0.0",
-  "description": "A template for HTML and CSS",
+  "name": "tp2",
+  "version": "0.1.0",
+  "description": "Mobile-First UI - Teste de Performance 2 | Instituto Infnet",
   "main": "index.html",
+  "type": "module",
   "scripts": {
     "start": "serve"
   },
@@ -10,9 +11,11 @@
     "html",
     "css"
   ],
-  "author": "Ives van Hoorne",
+  "author": "Leandro Medeiros",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^9.9.1",
+    "prettier": "^3.3.3",
     "serve": "11.2.0"
   }
 }

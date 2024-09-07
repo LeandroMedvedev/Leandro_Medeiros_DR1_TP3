@@ -1,27 +1,28 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.imagem {
+  width: 100%;
+  min-width: 321px;
+  display: block;
+  margin: 0 auto 25px;
 }
 
-.cabecalho,
-.rodape {
-  height: 15vh;
-  display: flex;
+.texto {
+  text-align: justify;
+  text-indent: 1.5em;
+  font-size: clamp(20px, 2vw, 27px);
+  padding: 10px;
 }
 
-.cabecalho {
-  justify-content: space-around;
-}
-
-@media (max-width: 768px) {
-  .cabecalho {
-    font-size: 4rem;
-    color: #03031b;
+@media (orientation: landscape) {
+  .conteiner {
+    display: flex;
+    padding: 10px;
   }
 
-  .hamburguer {
-    width: 70px;
+  .imagem {
+    width: 47%;
+  }
+
+  .texto {
+    width: 47%;
   }
 }
