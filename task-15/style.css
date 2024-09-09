@@ -1,0 +1,231 @@
+.cabecalho,
+.animal-info h1,
+.valor,
+.descricao,
+.especificacoes > li,
+.comentarios > h2,
+.comentario > p,
+.animais-relacionados > h2,
+.animal-relacionado > p {
+  font-family: Alegreya, serif;
+}
+
+/* *********************************** */
+/* CABEÇALHO */
+/* *********************************** */
+.cabecalho {
+  height: 15vh;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cabecalho,
+.menu-opcoes > p {
+  font-size: 2rem;
+}
+
+.menu-opcoes > p {
+  font-weight: 700;
+  color: #03031b;
+}
+
+.menu-hamburguer {
+  display: block;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: none;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #03031b;
+}
+
+.menu ul li:hover {
+  background-color: rgba(248, 248, 248, 0.8);
+}
+
+.menu-opcoes {
+  font-size: 18px;
+}
+
+.animal-detalhes {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.animal-imagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem-principal {
+  width: 62%;
+  min-width: 260px;
+  max-width: 360px;
+  height: auto;
+}
+
+.outras-imagens {
+  margin-top: 20px;
+}
+
+.outras-imagens img {
+  width: 85px;
+}
+
+.animal-info {
+  margin-top: 20px;
+}
+
+.animal-info h1 {
+  font-size: 24px;
+}
+
+.valor {
+  font-size: 2.2rem;
+  color: #03031b;
+  margin-top: 10px;
+}
+
+.descricao,
+.especificacoes > li {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.descricao {
+  margin-top: 15px;
+  text-indent: 20px;
+}
+
+.especificacoes {
+  margin-top: 20px;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.animais-relacionados {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.animais-relacionados > h2,
+.comentarios > h2 {
+  font-size: 1.5rem;
+}
+
+.animais-lista {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.animal-relacionado {
+  flex: 1 1 30%;
+  text-align: center;
+  margin: 10px;
+}
+
+.animal-relacionado img {
+  width: 100%;
+  min-width: 244px;
+  max-width: 308px;
+  height: 345px;
+}
+
+.animal-relacionado > .nome {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.animal-relacionado > .valor {
+  font-size: 1.3rem;
+}
+
+.comentarios {
+  padding: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: justify;
+}
+
+.comentarios h2 {
+  margin-bottom: 20px;
+}
+
+.comentario {
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .menu ul {
+    display: flex;
+  }
+
+  .menu-hamburguer {
+    display: none;
+  }
+
+  .animal-detalhes {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .animal-imagens,
+  .animal-info {
+    flex: 1 1 48%;
+    padding: 8px;
+  }
+
+  .menu ul {
+    justify-content: flex-start;
+  }
+
+  .animal-relacionado {
+    flex: 1 1 20%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #282c34;
+    color: #fff;
+  }
+
+  .animais-relacionados {
+    background-color: #383d49;
+  }
+
+  .comentarios {
+    background-color: #383d49;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f8f8f8;
+    color: #282c34;
+  }
+
+  .animais-relacionados {
+    background-color: #f4f4f4;
+  }
+
+  .comentarios {
+    background-color: #f4f4f4;
+  }
+}

@@ -27,7 +27,8 @@ a {
 
 .menu-hamburguer {
   display: block;
-  font-size: 24px;
+  font-size: 2.2rem;
+  cursor: pointer;
 }
 
 .menu ul {
@@ -172,6 +173,7 @@ img {
     text-indent: 30px;
   }
 }
+
 @media (min-width: 1024px) {
   #amigos h2 {
     text-indent: 10px;
