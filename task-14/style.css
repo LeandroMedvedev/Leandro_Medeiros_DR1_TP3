@@ -1,0 +1,289 @@
+body,
+a {
+  color: #03031b;
+}
+
+/* *********************************** */
+/* CABEÇALHO */
+/* *********************************** */
+.cabecalho {
+  height: 15vh;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Genos', sans-serif;
+}
+
+.cabecalho,
+.menu-opcoes > p {
+  font-size: 2rem;
+}
+
+.menu-opcoes > p {
+  font-weight: 700;
+  color: #ab85eb;
+}
+
+.menu-hamburguer {
+  display: block;
+  font-size: 24px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: none;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu-opcoes {
+  font-size: 18px;
+}
+
+/* *********************************** */
+/* CONTEÚDO */
+/* *********************************** */
+section {
+  margin: 15px 0;
+}
+
+img {
+  filter: grayscale(90%);
+}
+
+.conteudo {
+  max-width: 767px;
+  padding: 10px;
+  font-family: 'Genos', sans-serif;
+  font-size: 0.77rem;
+}
+
+#identificacao {
+  min-height: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.foto-perfil {
+  width: 140px;
+  margin-right: 8px;
+}
+.foto-perfil:hover {
+  transform: scaleX(-1);
+}
+
+#identificacao > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.informacoes-pessoais {
+  font-family: Alegreya, serif;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.informacoes-pessoais > p {
+  max-width: 750px;
+  display: block;
+  margin: 0 auto;
+}
+
+.passatempos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.passatempos > img {
+  width: 50%;
+}
+
+#amigos > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#amigos > div > img {
+  width: 100px;
+  border: 1px solid #d2d2d2;
+  border-radius: 50%;
+}
+
+#sugestoes > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#sugestoes > div > img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #d2d2d2;
+  border-radius: 50%;
+}
+
+.caixas {
+  display: none;
+}
+
+/* *********************************** */
+/* MEDIA QUERIES */
+/* *********************************** */
+@media (min-width: 425px) {
+  .conteudo {
+    font-size: 1rem;
+  }
+
+  .foto-perfil {
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu ul {
+    display: flex;
+  }
+
+  .menu-hamburguer {
+    display: none;
+  }
+
+  #amigos h2 {
+    text-indent: 30px;
+  }
+
+  #sugestoes h2 {
+    text-indent: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #amigos h2 {
+    text-indent: 10px;
+  }
+
+  #sugestoes h2 {
+    text-indent: 10px;
+  }
+
+  .caixas {
+    display: block;
+    margin: auto 0;
+  }
+
+  .caixas > div {
+    display: flex;
+    margin: 15px 0;
+  }
+
+  .caixas > div > img {
+    max-height: 300px;
+  }
+
+  .caixas > div > .flutuar {
+    animation: flutuar-acima 7s ease-in-out infinite;
+  }
+
+  .caixas > div > .flutuar-reverso {
+    animation: flutuar-reverso 7s ease-in-out infinite;
+  }
+
+  @keyframes flutuar-acima {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes flutuar-reverso {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .caixas > div > img:nth-child(1) {
+    border-right: 1px solid rgba(210, 210, 210, 0.9);
+  }
+
+  .caixas > div:nth-child(1) > img:nth-child(1) {
+    flex: 2;
+  }
+
+  .caixas > div:nth-child(2) > img:nth-child(2) {
+    flex: 2;
+  }
+
+  .caixas > div:nth-child(3) > img:nth-child(1) {
+    flex: 2;
+  }
+
+  .caixas > div:nth-child(4) > img:nth-child(2) {
+    flex: 2;
+  }
+
+  .conteudo {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+
+  .conteudo > div {
+    grid-column: 1 / 3;
+  }
+
+  .conteudo > .caixas {
+    grid-column: 3 / 4;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #282c34;
+  }
+
+  .titulo,
+  .cabecalho > a,
+  .cabecalho > .menu-opcoes > p,
+  .titulo,
+  .informacoes-pessoais > p,
+  #amigos > h2,
+  #sugestoes > h2 {
+    color: #fff;
+  }
+
+  #amigos > div > img {
+    border: 1px solid #fff;
+  }
+
+  #sugestoes > div > img {
+    border: 1px solid #fff;
+  }
+}

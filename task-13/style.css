@@ -1,5 +1,5 @@
 body {
-  font-family: "Alegreya", serif;
+  font-family: 'Alegreya', serif;
   font-size: clamp(10px, 2vw, 30px);
 }
 
@@ -55,7 +55,7 @@ li {
 @media (min-width: 1024px) {
   .pergunta {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
   }
