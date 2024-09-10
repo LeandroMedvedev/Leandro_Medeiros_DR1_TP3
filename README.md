@@ -2,6 +2,11 @@
 
 Bem-vindo ao **Teste de Performance 2**! Este é um projeto simples para demonstrar como configurar e rodar um aplicativo Node.js em sua máquina local.
 
+## 🌐 Implantação
+
+O projeto está disponível em:  
+**[https://leandro-medeiros-dr1-tp2mobilefirstui.vercel.app](https://leandro-medeiros-dr1-tp2mobilefirstui.vercel.app)**
+
 ## 🛠️ Tecnologias
 
 - Node.js
