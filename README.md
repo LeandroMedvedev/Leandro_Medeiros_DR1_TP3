@@ -70,4 +70,4 @@ Email: medvedevleandro@outlook.com
 GitHub: [LeandroMedvedev](https://github.com/LeandroMedvedev)
 
 Feito com  
-![alt text](image.png)
+![alt text](./images/nodejs.png)
