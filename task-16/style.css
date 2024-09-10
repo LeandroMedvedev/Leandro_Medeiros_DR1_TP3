@@ -1,0 +1,254 @@
+iframe {
+  width: 90%;
+  min-height: 200px;
+  border: none;
+}
+
+/* *********************************** */
+/* CABEÇALHO */
+/* *********************************** */
+.cabecalho {
+  height: 15vh;
+  margin: 0px 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Genos, sans-serif;
+  border-bottom: 1px solid #6d7991;
+  background-color: #ebeaea;
+}
+
+.menu-icones {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu-icones > img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.menu-hamburguer {
+  display: block;
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: #570707;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: none;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  color: #03031b;
+}
+
+.menu ul li:hover {
+  text-decoration: underline;
+}
+
+.menu-opcoes > p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #c01010;
+}
+
+/* *********************************** */
+/* MAIN */
+/* *********************************** */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* *********************************** */
+/* SECTION | VÍDEO DESTAQUE */
+/* *********************************** */
+.video-destaque {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.videos-relacionados,
+.video-destaque > h1,
+.propaganda > h2,
+.videos-relacionados > h2,
+.comentarios > h2,
+.autor {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #0f0f0f;
+}
+
+.video-destaque h1 {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.autor-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.autor-conteiner > img {
+  width: 40px;
+}
+
+.autor-conteiner > .autor {
+  font-size: 0.9rem;
+}
+
+.descricao > p {
+  max-width: 800px;
+  padding: 15px;
+  font-size: 1rem;
+  font-family: Alegreya, serif;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 1.3;
+  color: #03031b;
+}
+
+/* *********************************** */
+/* ASIDE | PROPAGANDA */
+/* *********************************** */
+.propaganda {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.propaganda > a > img {
+  width: 300px;
+  display: block;
+  margin: 0px auto;
+}
+
+.propaganda h2 {
+  margin: 0 0 10px;
+}
+
+/* *********************************** */
+/* SECTION | VÍDEOS RELACIONADOS */
+/* *********************************** */
+.videos-relacionados {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #ebeaea;
+}
+
+.videos-relacionados > h2 {
+  margin: 5px 0px 15px;
+}
+
+.videos-relacionados ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.videos-relacionados ul li p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #0f0f0f;
+}
+
+.video-principal,
+.video-relacionado {
+  width: 90%;
+}
+
+.video-principal {
+  max-width: 560px;
+}
+
+.video-relacionado {
+  max-width: 350px;
+}
+
+/* *********************************** */
+/* SECTION | COMENTÁRIOS */
+/* *********************************** */
+.comentarios {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Alegreya, serif;
+}
+
+.comentarios > h2 {
+  margin: 15px 0;
+}
+
+.comentarios ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  list-style-type: none;
+  gap: 15px;
+}
+
+.comentario {
+  text-align: justify;
+  text-indent: 10px;
+  color: #03031b;
+}
+
+/* *********************************** */
+/* MEDIA QUERIES */
+/* *********************************** */
+@media (min-width: 768px) {
+  .menu {
+    font-size: 1.5rem;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu-hamburguer {
+    display: none;
+  }
+
+  .video-principal {
+    min-height: 300px;
+  }
+
+  .propaganda {
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body,
+  .menu ul li a,
+  .descricao,
+  .video-destaque,
+  .propaganda,
+  .videos-relacionados,
+  .comentarios,
+  .menu {
+    background-color: #282c34;
+    color: #fff;
+  }
+}
