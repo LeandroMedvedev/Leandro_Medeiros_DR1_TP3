@@ -53,8 +53,8 @@ a {
   color: #03031b;
 }
 
-.menu ul li:hover {
-  background-color: rgba(248, 248, 248, 0.8);
+.menu ul li a:hover {
+  color: #ab85eb;
 }
 
 .animal-detalhes {
@@ -199,13 +199,28 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  body,
+  .menu-opcoes > p,
+  .menu > ul > li > a,
+  .animal-info > h1,
+  .descricao,
+  .especificacoes > li {
     background-color: #282c34;
     color: #fff;
   }
 
   .animais-relacionados {
     background-color: #383d49;
+  }
+
+  .animais-relacionados > h2,
+  .valor,
+  .nome,
+  .comentarios > h2,
+  .comentario > p,
+  .comentario > p > strong,
+  .comentario > p > span {
+    color: #fff;
   }
 
   .comentarios {

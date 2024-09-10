@@ -51,8 +51,8 @@ iframe {
   color: #03031b;
 }
 
-.menu ul li:hover {
-  text-decoration: underline;
+.menu ul li a:hover {
+  color: #c01010;
 }
 
 .menu-opcoes > p {
@@ -241,13 +241,17 @@ main {
 
 @media (prefers-color-scheme: dark) {
   body,
-  .menu ul li a,
-  .descricao,
+  .descricao > p,
   .video-destaque,
+  .propaganda > h2,
+  .video-destaque > h1,
+  .autor,
   .propaganda,
   .videos-relacionados,
-  .comentarios,
-  .menu {
+  .videos-relacionados > h2,
+  .videos-relacionados > ul > li > p,
+  .comentarios > h2,
+  .comnentarios p {
     background-color: #282c34;
     color: #fff;
   }

@@ -41,12 +41,12 @@ a {
   margin-right: 20px;
 }
 
-a {
+.menu > ul > li > a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.menu > ul > li > a:hover {
+  color: #ab85eb;
 }
 
 .menu-opcoes {
@@ -101,6 +101,13 @@ img {
   max-width: 750px;
   display: block;
   margin: 0 auto;
+}
+
+.informacoes-pessoais > p > a {
+  text-decoration: none;
+}
+.informacoes-pessoais > p > a:hover {
+  text-decoration: underline;
 }
 
 .passatempos {
@@ -268,25 +275,30 @@ img {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #282c34;
-  }
-
+  body,
+  .menu-opcoes > p,
+  .menu > ul > li > a,
   .titulo,
   .cabecalho > a,
   .cabecalho > .menu-opcoes > p,
   .titulo,
+  #identificacao > div > a,
   .informacoes-pessoais > p,
+  .informacoes-pessoais > p > a,
   #amigos > h2,
   #sugestoes > h2 {
+    background-color: #282c34;
     color: #fff;
   }
 
-  #amigos > div > img {
-    border: 1px solid #fff;
+  #amigos > div > img,
+  #sugestoes > div > img,
+  .flutuar {
+    color: #fff;
   }
 
-  #sugestoes > div > img {
+  #sugestoes > div > img,
+  #amigos > div > img {
     border: 1px solid #fff;
   }
 }
