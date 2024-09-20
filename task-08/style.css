@@ -11,7 +11,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  font-family: "Roboto Mono", sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   color: #050d12;
 }
 
@@ -73,7 +73,7 @@ li {
 /* *************************************** */
 .rodape,
 .conteiner-texto {
-  font-family: "Alegreya", serif;
+  font-family: 'Alegreya', serif;
 }
 
 .rodape {

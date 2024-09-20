@@ -1,20 +1,28 @@
 {
-  "name": "tp2",
+  "name": "tp3",
   "version": "0.1.0",
-  "description": "Mobile-First UI - Teste de Performance 2 | Instituto Infnet",
+  "description": "Mobile-First UI - Teste de Performance 3 | Instituto Infnet",
   "main": "index.html",
   "type": "module",
   "scripts": {
-    "start": "serve"
+    "start": "serve",
+    "lint": "eslint . --fix",
+    "format": "prettier --write ."
   },
   "keywords": [
     "html",
-    "css"
+    "css",
+    "mobile-first",
+    "ui"
   ],
   "author": "Leandro Medeiros",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "devDependencies": {
-    "eslint": "^9.9.1",
+    "@eslint/js": "^9.10.0",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
     "prettier": "^3.3.3",
     "serve": "^14.2.3"
   }
