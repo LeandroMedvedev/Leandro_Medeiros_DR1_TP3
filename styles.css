@@ -10,23 +10,35 @@ html {
   height: 100%;
   width: 100%;
   background-color: #f8f8f8;
+  font-family: Alegreya, serif;
+}
+
+.conteiner {
+  padding: 10px;
 }
 
 #titulo-principal,
 #titulo-secundario {
   text-align: center;
-  font-family: Alegreya, serif;
+}
+
+#titulo-principal {
+  font-size: 1.5rem;
 }
 
 .lista-de-tarefas {
+  max-width: 500px;
   height: 85vh;
-  margin-top: 7px;
+  margin: 0px auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
-  line-height: 1.7;
-  font-family: Alegreya, serif;
+  gap: 15px;
   font-size: 1.2rem;
+  list-style-type: none;
+}
+
+li {
   list-style-type: none;
 }

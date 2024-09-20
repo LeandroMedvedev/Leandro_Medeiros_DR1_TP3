@@ -1,4 +1,4 @@
-# 📚 Teste de Performance 2 | Mobile-First UI 🌟
+# 📚 Teste de Performance 3 | Mobile-First UI 🌟
 
 Bem-vindo ao **Teste de Performance 2**! Este é um projeto simples para demonstrar como configurar e rodar um aplicativo Node.js em sua máquina local.
 
@@ -75,4 +75,4 @@ Email: medvedevleandro@outlook.com
 GitHub: [LeandroMedvedev](https://github.com/LeandroMedvedev)
 
 Feito com  
-![alt text](./images/nodejs.png)
+![alt text](./assets/nodejs.png)
