@@ -1,0 +1,66 @@
+.conteiner {
+  height: 100vh;
+  position: relative;
+}
+
+.cabecalho {
+  width: 98%;
+  height: 20vh;
+  border-top: 1px solid #6d7991;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Syne Mono', monospace;
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.menu-hamburguer {
+  display: block;
+  font-size: 3.4rem;
+  cursor: pointer;
+  color: var(--ebony);
+}
+
+.menu ul {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-russian);
+  transition:
+    color 0.8s ease,
+    text-decoration 1s ease;
+}
+
+.menu ul li a:hover {
+  color: var(--dark-gold);
+  text-decoration: overline;
+}
+
+.imagem {
+  width: 80px;
+}
+
+@media (min-width: 768px) {
+  .cabecalho {
+    flex-direction: row;
+  }
+
+  .menu ul {
+    display: flex;
+    text-transform: uppercase;
+    gap: 20px;
+  }
+
+  .menu-hamburguer {
+    display: none;
+  }
+
+  .menu ul {
+    justify-content: flex-start;
+  }
+}

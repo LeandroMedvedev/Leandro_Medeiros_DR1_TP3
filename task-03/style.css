@@ -29,6 +29,7 @@
 
 .menu ul li a {
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--black-russian);
   transition:
     text-decoration 1s ease,
