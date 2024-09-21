@@ -5,14 +5,15 @@
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #6d7991;
-  font-family: Genos, sans-serif;
-  font-size: 1.8rem;
+  font-family: 'Syne Mono', monospace;
+  font-size: 1.6rem;
 }
 
 .menu-hamburguer {
   display: block;
-  font-size: 2.2rem;
+  font-size: 3.4rem;
   cursor: pointer;
+  color: var(--ebony);
 }
 
 .menu ul {
@@ -25,17 +26,15 @@
 
 a {
   text-decoration: none;
-  color: #03031b;
+  color: var(--black-russian);
+  transition:
+    text-decoration 10s ease-in,
+    color 0.8s ease;
 }
 
 .menu ul li a:hover {
-  color: #ab85eb;
-}
-
-.animal-detalhes {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+  color: var(--ubuntu-orange);
+  text-decoration: overline;
 }
 
 @media (min-width: 768px) {

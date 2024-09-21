@@ -1,0 +1,60 @@
+.cabecalho {
+  height: 20vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #6d7991;
+  font-family: 'Syne Mono', monospace;
+  font-size: 1.3rem;
+}
+
+.menu-hamburguer {
+  display: block;
+  font-size: 3.4rem;
+  cursor: pointer;
+  color: var(--ebony);
+}
+
+.menu ul {
+  display: none;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-russian);
+  transition:
+    color 0.8s ease,
+    text-decoration 1s ease;
+}
+
+.menu ul li a:hover {
+  color: var(--dark-gold);
+  text-decoration: overline;
+}
+
+.imagem {
+  width: 80px;
+}
+
+@media (min-width: 768px) {
+  .cabecalho {
+    flex-direction: row;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu-hamburguer {
+    display: none;
+  }
+
+  .menu ul {
+    justify-content: flex-start;
+  }
+}
