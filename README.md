@@ -1,11 +1,10 @@
 # 📚 Teste de Performance 3 | Mobile-First UI 🌟
 
-Bem-vindo ao **Teste de Performance 2**! Este é um projeto simples para demonstrar como configurar e rodar um aplicativo Node.js em sua máquina local.
+Bem-vindo ao **Teste de Performance 3**! Este é um projeto simples para demonstrar como configurar e rodar um aplicativo Node.js em sua máquina local.
 
 ## 🌐 Implantação
 
-O projeto está disponível em:  
-**[https://leandro-medeiros-dr1-tp2mobilefirstui.vercel.app](https://leandro-medeiros-dr1-tp2mobilefirstui.vercel.app)**
+O projeto está disponível em: (pôr URL Vercel)
 
 ## 🛠️ Tecnologias
 
