@@ -4,7 +4,7 @@ Bem-vindo ao **Teste de Performance 3**! Este é um projeto simples para demonst
 
 ## 🌐 Implantação
 
-O projeto está disponível em: (pôr URL Vercel)
+O projeto está disponível em: [https://leandro-medeiros-dr1-tp3-mobilefirstui.vercel.app/](https://leandro-medeiros-dr1-tp3-mobilefirstui.vercel.app/)
 
 ## 🛠️ Tecnologias
 
