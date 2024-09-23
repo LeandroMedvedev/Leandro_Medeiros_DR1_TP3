@@ -25,7 +25,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 Primeiro, clone o repositório para sua máquina local usando o comando:
 
 ```bash
-git clone git@github.com:LeandroMedvedev/Leandro_Medeiros_DR1_TP2.git
+git clone git@github.com:LeandroMedvedev/Leandro_Medeiros_DR1_TP3.git
 ```
 
 ### 📦 Instalando as dependências
@@ -33,7 +33,7 @@ git clone git@github.com:LeandroMedvedev/Leandro_Medeiros_DR1_TP2.git
 Navegue até o diretório do projeto e instale as dependências:
 
 ```bash
-cd Leandro_Medeiros_DR1_TP2
+cd Leandro_Medeiros_DR1_TP3
 npm install
 ```
 
